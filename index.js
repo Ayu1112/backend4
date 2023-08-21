@@ -1,8 +1,9 @@
 const express=require('express');
-const { connection } = require('mongoose');
+
 const cors=require('cors');
 const { userRouter } = require('./routes/user.route');
 const { postRouter } = require('./routes/posts.route');
+const {connection} = require('./db');
 
 const app=express();
 app.use(express.json())
